@@ -24,6 +24,7 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    
     NSString* url = @"https://adelphos.firebase.io";
     Firebase* dataRef = [[Firebase alloc] initWithUrl:url];
     [dataRef observeEventType:FEventTypeValue withBlock:^(FDataSnapshot *snapshot) {
@@ -95,8 +96,8 @@
     
     MKPointAnnotation *point2 = [[MKPointAnnotation alloc] init];
     point2.coordinate = partyLocation2;
-    point2.title = @"Santa Clause ";
-    point2.subtitle = @"1401 E Adams Ave at 10pm";
+    point2.title = title; //@"Santa Clause ";
+    point2.subtitle = address; //@"1401 E Adams Ave at 10pm";
     
     [self.mapView addAnnotation:point2];
     

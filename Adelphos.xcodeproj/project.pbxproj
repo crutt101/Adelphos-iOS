@@ -40,6 +40,7 @@
 		DA5429301872AFFC00D9E188 /* adel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DA54292F1872AFFC00D9E188 /* adel.mp3 */; };
 		DA8BAD151797178B00441A44 /* BWThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8BAD141797178B00441A44 /* BWThirdViewController.m */; };
 		DAB5E7F81772DE3C0019487C /* chap.gpx in Resources */ = {isa = PBXBuildFile; fileRef = DAB5E7F71772DE3C0019487C /* chap.gpx */; };
+		DAD1179A18A203C40084074E /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD1179918A203C40084074E /* libc++.dylib */; };
 		DADF955B177372010099B831 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADF955A177372010099B831 /* CFNetwork.framework */; };
 		DADF955D177372190099B831 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADF955C177372190099B831 /* SystemConfiguration.framework */; };
 		DADF955F177372240099B831 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADF955E177372240099B831 /* MobileCoreServices.framework */; };
@@ -100,6 +101,7 @@
 		DA8BAD131797174C00441A44 /* BWThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWThirdViewController.h; sourceTree = "<group>"; };
 		DA8BAD141797178B00441A44 /* BWThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWThirdViewController.m; sourceTree = "<group>"; };
 		DAB5E7F71772DE3C0019487C /* chap.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chap.gpx; sourceTree = "<group>"; };
+		DAD1179918A203C40084074E /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		DADF955A177372010099B831 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		DADF955C177372190099B831 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DADF955E177372240099B831 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -111,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD1179A18A203C40084074E /* libc++.dylib in Frameworks */,
 				DA01F04E18A0BC860064DB7D /* Security.framework in Frameworks */,
 				DADF955B177372010099B831 /* CFNetwork.framework in Frameworks */,
 				DA01F04C18A0BC6D0064DB7D /* libicucore.dylib in Frameworks */,
@@ -164,6 +167,7 @@
 		DA35FD14177275E4008E77D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DAD1179918A203C40084074E /* libc++.dylib */,
 				DA01F04D18A0BC860064DB7D /* Security.framework */,
 				DA01F04B18A0BC6D0064DB7D /* libicucore.dylib */,
 				DA01F04918A0BBD40064DB7D /* Firebase.framework */,
@@ -484,7 +488,6 @@
 				GCC_PREFIX_HEADER = "Adelphos/Adelphos-Prefix.pch";
 				INFOPLIST_FILE = "Adelphos/Adelphos-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -504,7 +507,6 @@
 				GCC_PREFIX_HEADER = "Adelphos/Adelphos-Prefix.pch";
 				INFOPLIST_FILE = "Adelphos/Adelphos-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
