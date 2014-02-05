@@ -9,6 +9,7 @@
 #import "BWSecondViewController.h"
 #import <Firebase/Firebase.h>
 
+
 #define METERS_PER_MILE 1609.344
 
 
@@ -24,34 +25,6 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    
-    NSString* url = @"https://adelphos.firebase.io";
-    Firebase* dataRef = [[Firebase alloc] initWithUrl:url];
-    [dataRef observeEventType:FEventTypeValue withBlock:^(FDataSnapshot *snapshot) {
-    for (FDataSnapshot *child in snapshot.children) {
-            //get title
-            title = child.name;
-        
-            //get address, date, time
-            if(child.hasChildren) {
-                for (FDataSnapshot *details in child.children) {
-                    if([details.name isEqualToString:@"Address"]) {
-                    address = details.value;
-                        
-                    }
-                    
-                    if([details.name isEqualToString:@"Date"]) {
-                        date = details.value;
-                    }
-                    
-                    if([details.name isEqualToString:@"Time"]) {
-                        time = details.value;
-                    }
-                }
-            }
-        }
-        //NSLog(address);
-    }];
     
     // Center on this location
     CLLocationCoordinate2D zoomLocation;
@@ -70,6 +43,37 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [[[Firebase alloc] initWithUrl:@"https://adelphos.firebaseio.com/"] observeEventType:FEventTypeValue withBlock:^
+     (FDataSnapshot *snapshot) {
+        for (FDataSnapshot *child in snapshot.children) {
+            //get title
+            title = child.name;
+            //get address, date, time
+            if(child.hasChildren) {
+                for (FDataSnapshot *details in child.children) {
+                    if([details.name isEqualToString:@"Address"]) {
+                        address = details.value;
+                        
+                    }
+                    
+                    if([details.name isEqualToString:@"Date"]) {
+                        date = details.value;
+                    }
+                    
+                    if([details.name isEqualToString:@"Time"]) {
+                        time = details.value;
+                    }
+                }
+            }
+            
+            NSLog(@"Title: %@", title);
+            NSLog(@"Address: %@", address);
+            NSLog(@"Date: %@", date);
+            NSLog(@"Time: %@", time );
+        }
+    }];
+
     /*
 	MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
     [annotation setCoordinate:centerCoordinate];

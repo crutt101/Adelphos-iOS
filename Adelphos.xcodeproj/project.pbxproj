@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		812B721918A20AE2003DD0F4 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 812B721818A20AE2003DD0F4 /* Firebase.framework */; };
 		DA0146AF17B4469400D8E62F /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0146AE17B4469400D8E62F /* Images-2.xcassets */; };
-		DA01F04A18A0BBD40064DB7D /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA01F04918A0BBD40064DB7D /* Firebase.framework */; };
 		DA01F04C18A0BC6D0064DB7D /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA01F04B18A0BC6D0064DB7D /* libicucore.dylib */; };
 		DA01F04E18A0BC860064DB7D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA01F04D18A0BC860064DB7D /* Security.framework */; };
 		DA35FD16177275E4008E77D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA35FD15177275E4008E77D9 /* UIKit.framework */; };
@@ -58,8 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		812B721818A20AE2003DD0F4 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		DA0146AE17B4469400D8E62F /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
-		DA01F04918A0BBD40064DB7D /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		DA01F04B18A0BC6D0064DB7D /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		DA01F04D18A0BC860064DB7D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		DA35FD12177275E4008E77D9 /* Adelphos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adelphos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,9 +118,9 @@
 				DADF955B177372010099B831 /* CFNetwork.framework in Frameworks */,
 				DA01F04C18A0BC6D0064DB7D /* libicucore.dylib in Frameworks */,
 				DADF95611773722E0099B831 /* libz.dylib in Frameworks */,
-				DA01F04A18A0BBD40064DB7D /* Firebase.framework in Frameworks */,
 				DADF955F177372240099B831 /* MobileCoreServices.framework in Frameworks */,
 				DADF955D177372190099B831 /* SystemConfiguration.framework in Frameworks */,
+				812B721918A20AE2003DD0F4 /* Firebase.framework in Frameworks */,
 				DA35FD6017727A56008E77D9 /* MapKit.framework in Frameworks */,
 				DA35FD16177275E4008E77D9 /* UIKit.framework in Frameworks */,
 				DA35FD18177275E4008E77D9 /* Foundation.framework in Frameworks */,
@@ -167,10 +167,10 @@
 		DA35FD14177275E4008E77D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				812B721818A20AE2003DD0F4 /* Firebase.framework */,
 				DAD1179918A203C40084074E /* libc++.dylib */,
 				DA01F04D18A0BC860064DB7D /* Security.framework */,
 				DA01F04B18A0BC6D0064DB7D /* libicucore.dylib */,
-				DA01F04918A0BBD40064DB7D /* Firebase.framework */,
 				DADF95601773722E0099B831 /* libz.dylib */,
 				DADF955E177372240099B831 /* MobileCoreServices.framework */,
 				DADF955C177372190099B831 /* SystemConfiguration.framework */,
@@ -478,16 +478,19 @@
 		DA35FD56177275E5008E77D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/alexc/Documents/xcode/Adelphos/Adelphos,
+					"/Users/rossevans/Documents/workspace/Adelphos/Adelphos-iOS",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Adelphos/Adelphos-Prefix.pch";
 				INFOPLIST_FILE = "Adelphos/Adelphos-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -497,16 +500,19 @@
 		DA35FD57177275E5008E77D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/alexc/Documents/xcode/Adelphos/Adelphos,
+					"/Users/rossevans/Documents/workspace/Adelphos/Adelphos-iOS",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Adelphos/Adelphos-Prefix.pch";
 				INFOPLIST_FILE = "Adelphos/Adelphos-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
