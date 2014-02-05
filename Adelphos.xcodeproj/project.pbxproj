@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA0146AF17B4469400D8E62F /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0146AE17B4469400D8E62F /* Images-2.xcassets */; };
+		DA01F04A18A0BBD40064DB7D /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA01F04918A0BBD40064DB7D /* Firebase.framework */; };
+		DA01F04C18A0BC6D0064DB7D /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA01F04B18A0BC6D0064DB7D /* libicucore.dylib */; };
+		DA01F04E18A0BC860064DB7D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA01F04D18A0BC860064DB7D /* Security.framework */; };
 		DA35FD16177275E4008E77D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA35FD15177275E4008E77D9 /* UIKit.framework */; };
 		DA35FD18177275E4008E77D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA35FD17177275E4008E77D9 /* Foundation.framework */; };
 		DA35FD1A177275E4008E77D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA35FD19177275E4008E77D9 /* CoreGraphics.framework */; };
@@ -28,6 +32,18 @@
 		DA35FD47177275E5008E77D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA35FD17177275E4008E77D9 /* Foundation.framework */; };
 		DA35FD4F177275E5008E77D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA35FD4D177275E5008E77D9 /* InfoPlist.strings */; };
 		DA35FD52177275E5008E77D9 /* AdelphosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA35FD51177275E5008E77D9 /* AdelphosTests.m */; };
+		DA35FD5C17727603008E77D9 /* AdelphoAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DA35FD5B17727603008E77D9 /* AdelphoAppIcon.png */; };
+		DA35FD5E1772760A008E77D9 /* AdelphoAppIcon@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = DA35FD5D1772760A008E77D9 /* AdelphoAppIcon@2X.png */; };
+		DA35FD6017727A56008E77D9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA35FD5F17727A55008E77D9 /* MapKit.framework */; };
+		DA4A3F4C1773BE8500EAAD6B /* AdelphosBackround.png in Resources */ = {isa = PBXBuildFile; fileRef = DA4A3F4B1773BE8500EAAD6B /* AdelphosBackround.png */; };
+		DA54292E1872AF1200D9E188 /* meerkat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA54292D1872AF1200D9E188 /* meerkat.jpg */; };
+		DA5429301872AFFC00D9E188 /* adel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DA54292F1872AFFC00D9E188 /* adel.mp3 */; };
+		DA8BAD151797178B00441A44 /* BWThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8BAD141797178B00441A44 /* BWThirdViewController.m */; };
+		DAB5E7F81772DE3C0019487C /* chap.gpx in Resources */ = {isa = PBXBuildFile; fileRef = DAB5E7F71772DE3C0019487C /* chap.gpx */; };
+		DADF955B177372010099B831 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADF955A177372010099B831 /* CFNetwork.framework */; };
+		DADF955D177372190099B831 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADF955C177372190099B831 /* SystemConfiguration.framework */; };
+		DADF955F177372240099B831 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADF955E177372240099B831 /* MobileCoreServices.framework */; };
+		DADF95611773722E0099B831 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DADF95601773722E0099B831 /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +57,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA0146AE17B4469400D8E62F /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
+		DA01F04918A0BBD40064DB7D /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		DA01F04B18A0BC6D0064DB7D /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		DA01F04D18A0BC860064DB7D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		DA35FD12177275E4008E77D9 /* Adelphos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adelphos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA35FD15177275E4008E77D9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DA35FD17177275E4008E77D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -69,6 +89,21 @@
 		DA35FD4E177275E5008E77D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DA35FD50177275E5008E77D9 /* AdelphosTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdelphosTests.h; sourceTree = "<group>"; };
 		DA35FD51177275E5008E77D9 /* AdelphosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdelphosTests.m; sourceTree = "<group>"; };
+		DA35FD5B17727603008E77D9 /* AdelphoAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AdelphoAppIcon.png; sourceTree = "<group>"; };
+		DA35FD5D1772760A008E77D9 /* AdelphoAppIcon@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AdelphoAppIcon@2X.png"; sourceTree = "<group>"; };
+		DA35FD5F17727A55008E77D9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DA489493177A1631001049FD /* Annotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		DA489494177A1631001049FD /* Annotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+		DA4A3F4B1773BE8500EAAD6B /* AdelphosBackround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AdelphosBackround.png; sourceTree = "<group>"; };
+		DA54292D1872AF1200D9E188 /* meerkat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meerkat.jpg; sourceTree = "<group>"; };
+		DA54292F1872AFFC00D9E188 /* adel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = adel.mp3; sourceTree = "<group>"; };
+		DA8BAD131797174C00441A44 /* BWThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWThirdViewController.h; sourceTree = "<group>"; };
+		DA8BAD141797178B00441A44 /* BWThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWThirdViewController.m; sourceTree = "<group>"; };
+		DAB5E7F71772DE3C0019487C /* chap.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chap.gpx; sourceTree = "<group>"; };
+		DADF955A177372010099B831 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DADF955C177372190099B831 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DADF955E177372240099B831 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DADF95601773722E0099B831 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +111,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA01F04E18A0BC860064DB7D /* Security.framework in Frameworks */,
+				DADF955B177372010099B831 /* CFNetwork.framework in Frameworks */,
+				DA01F04C18A0BC6D0064DB7D /* libicucore.dylib in Frameworks */,
+				DADF95611773722E0099B831 /* libz.dylib in Frameworks */,
+				DA01F04A18A0BBD40064DB7D /* Firebase.framework in Frameworks */,
+				DADF955F177372240099B831 /* MobileCoreServices.framework in Frameworks */,
+				DADF955D177372190099B831 /* SystemConfiguration.framework in Frameworks */,
+				DA35FD6017727A56008E77D9 /* MapKit.framework in Frameworks */,
 				DA35FD16177275E4008E77D9 /* UIKit.framework in Frameworks */,
 				DA35FD18177275E4008E77D9 /* Foundation.framework in Frameworks */,
 				DA35FD1A177275E4008E77D9 /* CoreGraphics.framework in Frameworks */,
@@ -98,6 +141,10 @@
 		DA35FD09177275E4008E77D9 = {
 			isa = PBXGroup;
 			children = (
+				DAB5E7F71772DE3C0019487C /* chap.gpx */,
+				DA35FD5F17727A55008E77D9 /* MapKit.framework */,
+				DA35FD5D1772760A008E77D9 /* AdelphoAppIcon@2X.png */,
+				DA35FD5B17727603008E77D9 /* AdelphoAppIcon.png */,
 				DA35FD1B177275E4008E77D9 /* Adelphos */,
 				DA35FD4A177275E5008E77D9 /* AdelphosTests */,
 				DA35FD14177275E4008E77D9 /* Frameworks */,
@@ -117,6 +164,13 @@
 		DA35FD14177275E4008E77D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DA01F04D18A0BC860064DB7D /* Security.framework */,
+				DA01F04B18A0BC6D0064DB7D /* libicucore.dylib */,
+				DA01F04918A0BBD40064DB7D /* Firebase.framework */,
+				DADF95601773722E0099B831 /* libz.dylib */,
+				DADF955E177372240099B831 /* MobileCoreServices.framework */,
+				DADF955C177372190099B831 /* SystemConfiguration.framework */,
+				DADF955A177372010099B831 /* CFNetwork.framework */,
 				DA35FD15177275E4008E77D9 /* UIKit.framework */,
 				DA35FD17177275E4008E77D9 /* Foundation.framework */,
 				DA35FD19177275E4008E77D9 /* CoreGraphics.framework */,
@@ -128,6 +182,9 @@
 		DA35FD1B177275E4008E77D9 /* Adelphos */ = {
 			isa = PBXGroup;
 			children = (
+				DA8BAD131797174C00441A44 /* BWThirdViewController.h */,
+				DA8BAD141797178B00441A44 /* BWThirdViewController.m */,
+				DA4A3F4B1773BE8500EAAD6B /* AdelphosBackround.png */,
 				DA35FD24177275E4008E77D9 /* BWAppDelegate.h */,
 				DA35FD25177275E4008E77D9 /* BWAppDelegate.m */,
 				DA35FD2D177275E4008E77D9 /* MainStoryboard.storyboard */,
@@ -140,6 +197,11 @@
 				DA35FD3A177275E4008E77D9 /* second.png */,
 				DA35FD3C177275E4008E77D9 /* second@2x.png */,
 				DA35FD1C177275E4008E77D9 /* Supporting Files */,
+				DA489493177A1631001049FD /* Annotation.h */,
+				DA489494177A1631001049FD /* Annotation.m */,
+				DA0146AE17B4469400D8E62F /* Images-2.xcassets */,
+				DA54292F1872AFFC00D9E188 /* adel.mp3 */,
+				DA54292D1872AF1200D9E188 /* meerkat.jpg */,
 			);
 			path = Adelphos;
 			sourceTree = "<group>";
@@ -252,12 +314,19 @@
 				DA35FD20177275E4008E77D9 /* InfoPlist.strings in Resources */,
 				DA35FD28177275E4008E77D9 /* Default.png in Resources */,
 				DA35FD2A177275E4008E77D9 /* Default@2x.png in Resources */,
+				DA0146AF17B4469400D8E62F /* Images-2.xcassets in Resources */,
+				DA54292E1872AF1200D9E188 /* meerkat.jpg in Resources */,
 				DA35FD2C177275E4008E77D9 /* Default-568h@2x.png in Resources */,
 				DA35FD2F177275E4008E77D9 /* MainStoryboard.storyboard in Resources */,
 				DA35FD34177275E4008E77D9 /* first.png in Resources */,
+				DA4A3F4C1773BE8500EAAD6B /* AdelphosBackround.png in Resources */,
 				DA35FD36177275E4008E77D9 /* first@2x.png in Resources */,
 				DA35FD3B177275E4008E77D9 /* second.png in Resources */,
 				DA35FD3D177275E4008E77D9 /* second@2x.png in Resources */,
+				DA5429301872AFFC00D9E188 /* adel.mp3 in Resources */,
+				DA35FD5C17727603008E77D9 /* AdelphoAppIcon.png in Resources */,
+				DA35FD5E1772760A008E77D9 /* AdelphoAppIcon@2X.png in Resources */,
+				DAB5E7F81772DE3C0019487C /* chap.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA8BAD151797178B00441A44 /* BWThirdViewController.m in Sources */,
 				DA35FD22177275E4008E77D9 /* main.m in Sources */,
 				DA35FD26177275E4008E77D9 /* BWAppDelegate.m in Sources */,
 				DA35FD32177275E4008E77D9 /* BWFirstViewController.m in Sources */,
@@ -404,10 +474,19 @@
 		DA35FD56177275E5008E77D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/alexc/Documents/xcode/Adelphos/Adelphos,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Adelphos/Adelphos-Prefix.pch";
 				INFOPLIST_FILE = "Adelphos/Adelphos-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -415,10 +494,19 @@
 		DA35FD57177275E5008E77D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/alexc/Documents/xcode/Adelphos/Adelphos,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Adelphos/Adelphos-Prefix.pch";
 				INFOPLIST_FILE = "Adelphos/Adelphos-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -476,6 +564,7 @@
 				DA35FD57177275E5008E77D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA35FD58177275E5008E77D9 /* Build configuration list for PBXNativeTarget "AdelphosTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +573,7 @@
 				DA35FD5A177275E5008E77D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

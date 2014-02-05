@@ -2,17 +2,17 @@
 //  BWAppDelegate.m
 //  Adelphos
 //
-//  Created by Alexander Cruttenden on 6/19/13.
+//  Created by Alexander Cruttenden on 11/19/13.
 //  Copyright (c) 2013 Alexander Cruttenden. All rights reserved.
 //
 
 #import "BWAppDelegate.h"
 
+// Automatic written file when making the app in Xcode
 @implementation BWAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
     return YES;
 }
 							
