@@ -39,6 +39,7 @@
 		DA54292E1872AF1200D9E188 /* meerkat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA54292D1872AF1200D9E188 /* meerkat.jpg */; };
 		DA5429301872AFFC00D9E188 /* adel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DA54292F1872AFFC00D9E188 /* adel.mp3 */; };
 		DA8BAD151797178B00441A44 /* BWThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8BAD141797178B00441A44 /* BWThirdViewController.m */; };
+		DA93718618A31543003D9CBA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA93718518A31543003D9CBA /* CoreLocation.framework */; };
 		DAB5E7F81772DE3C0019487C /* chap.gpx in Resources */ = {isa = PBXBuildFile; fileRef = DAB5E7F71772DE3C0019487C /* chap.gpx */; };
 		DAD1179A18A203C40084074E /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD1179918A203C40084074E /* libc++.dylib */; };
 		DADF955B177372010099B831 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADF955A177372010099B831 /* CFNetwork.framework */; };
@@ -100,6 +101,7 @@
 		DA54292F1872AFFC00D9E188 /* adel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = adel.mp3; sourceTree = "<group>"; };
 		DA8BAD131797174C00441A44 /* BWThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWThirdViewController.h; sourceTree = "<group>"; };
 		DA8BAD141797178B00441A44 /* BWThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWThirdViewController.m; sourceTree = "<group>"; };
+		DA93718518A31543003D9CBA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DAB5E7F71772DE3C0019487C /* chap.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chap.gpx; sourceTree = "<group>"; };
 		DAD1179918A203C40084074E /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		DADF955A177372010099B831 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -113,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA93718618A31543003D9CBA /* CoreLocation.framework in Frameworks */,
 				DAD1179A18A203C40084074E /* libc++.dylib in Frameworks */,
 				DA01F04E18A0BC860064DB7D /* Security.framework in Frameworks */,
 				DADF955B177372010099B831 /* CFNetwork.framework in Frameworks */,
@@ -167,6 +170,7 @@
 		DA35FD14177275E4008E77D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DA93718518A31543003D9CBA /* CoreLocation.framework */,
 				812B721818A20AE2003DD0F4 /* Firebase.framework */,
 				DAD1179918A203C40084074E /* libc++.dylib */,
 				DA01F04D18A0BC860064DB7D /* Security.framework */,

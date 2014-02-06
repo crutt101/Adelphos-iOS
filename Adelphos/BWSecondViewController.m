@@ -8,11 +8,14 @@
 
 #import "BWSecondViewController.h"
 #import <Firebase/Firebase.h>
+#import <CoreLocation/CoreLocation.h>
 
 
 #define METERS_PER_MILE 1609.344
 
+//@interface BWSecondViewController ()
 
+//@end
 
 @implementation BWSecondViewController
 
@@ -71,6 +74,56 @@
             NSLog(@"Address: %@", address);
             NSLog(@"Date: %@", date);
             NSLog(@"Time: %@", time );
+            
+            
+            // forward geocoder
+        
+            NSString *location = address;
+            CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+            [geocoder geocodeAddressString:location completionHandler:^(NSArray* placemarks, NSError* error)
+            {
+                     if (placemarks && placemarks.count > 0)
+                     {
+                         CLPlacemark *topResult = [placemarks objectAtIndex:0];
+                          MKPlacemark *placemark = [[MKPlacemark alloc] initWithPlacemark:topResult];
+                         
+                         
+                        // [self.mapView addAnnotation:placemark];
+                         
+                         //can't set title on MKPlacemark, so must make MKPointAnnotation
+                         MKPointAnnotation *point2 = [[MKPointAnnotation alloc] init];
+                         
+                         point2.coordinate = placemark.coordinate;
+                         
+                         
+                        // NSString *titleAndAddress = [NSString stringWithFormat:@"%@, %@",title, address];
+                        // point2.title = titleAndAddress;
+                         
+                        point2.title = title;
+                         
+                       //  point2.subtitle = address;
+                         
+                        // NSString *dateAndTime = [NSString stringWithFormat:@"%@, %@",date, time];
+                         
+                         NSString *addressDateAndTime = [NSString stringWithFormat:@"%@, %@, %@", address, date, time];
+                         point2.subtitle = addressDateAndTime;
+                         // add button that gives directions to address
+                         //then add date and time to .subtitle line
+                         
+                         [self.mapView addAnnotation:point2];
+                         
+                         //automatically pops up
+                         [self.mapView selectAnnotation:point2 animated:YES];
+                     }
+             }
+             ];
+           
+        // 1401 E Adams Ave
+        // CLLocationCoordinate2D partyLocation2;
+        // partyLocation2.latitude = 33.806949;
+        // partyLocation2.longitude = -117.838826;
+            
+           
         }
     }];
 
@@ -93,29 +146,9 @@
     
     [self.mapView addAnnotation:point];
     */
-    // 1401 E Adams Ave
-    CLLocationCoordinate2D partyLocation2;
-    partyLocation2.latitude = 33.806949;
-    partyLocation2.longitude = -117.838826;
+   
     
-    MKPointAnnotation *point2 = [[MKPointAnnotation alloc] init];
-    point2.coordinate = partyLocation2;
-    point2.title = title; //@"Santa Clause ";
-    point2.subtitle = address; //@"1401 E Adams Ave at 10pm";
     
-    [self.mapView addAnnotation:point2];
-    
-    //bucky
-    CLLocationCoordinate2D partyLocation3;
-    partyLocation3.latitude = 33.608742;
-    partyLocation3.longitude = 117.849792;
-    MKPointAnnotation *point3 = [[MKPointAnnotation alloc] init];
-    point3.coordinate = partyLocation2;
-    point3.title = @"Bucky's Birthday!";
-    point3.subtitle = @"1 Bodega Bay Dr Newport at 8pm";
-    
-    [self.mapView addAnnotation:point2];
-
 }
 
 - (void)didReceiveMemoryWarning

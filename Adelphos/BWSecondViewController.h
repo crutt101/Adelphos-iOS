@@ -19,4 +19,6 @@
 @property NSString *time;
 @property NSString *title;
 
+@property (strong, nonatomic) CLLocation *location;
+
 @end
